@@ -6,6 +6,12 @@ class AuthCtrl {
     this.authType = $state.current.name.replace('app.', '')
 
   }
+
+  submitForm() {
+    this.isSubmitting = true;
+
+    console.log(this.formData);
+  }
 }
 
 export default AuthCtrl;
